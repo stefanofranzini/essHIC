@@ -40,7 +40,7 @@ sys.path.append('path/to/essHIC')
 import essHIC
 ```
 
-For the package to function correctly you will need to install the required dependencies:
+For *essHIC* to function correctly you will need to install the required dependencies:
 
 ```bash
 numpy
@@ -52,4 +52,11 @@ matplotlib
 ---
 
 ## USAGE
+
+To use *essHIC* in one of your python3 scripts import the package with
+
+```python3
+import essHIC
+```
+
 
