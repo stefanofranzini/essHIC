@@ -22,4 +22,34 @@ the results of all mentioned analyses.
 
 ## INSTALLING
 
-to install the package, please 
+essHIC is written in python3, it has been tested in python3.5.2. Both the python3 language and the required packages need to be installed. To install the package through the python3 package manager, copy and paste the snippet below in your terminal:
+
+```bash
+pip install --upgrade essHIC 
+```
+
+Please notice that you may need to have administrator priviliges in order to be able to install the package. Using this method will take care of the dependencies.
+
+Otherwise, you may simply clone this repository to your computer. To use the package in a python3 script you will need to link its local path; to do so write the snippet below in your python3 code:
+
+```python3
+import sys
+
+sys.path.append('path/to/essHIC')
+
+import essHIC
+```
+
+For the package to function correctly you will need to install the required dependencies:
+
+```bash
+numpy
+scipy
+sklearn
+matplotlib
+```
+
+---
+
+## USAGE
+
