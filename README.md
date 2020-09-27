@@ -61,6 +61,6 @@ To use *essHIC* in one of your python3 scripts import the package with
 import essHIC
 ```
 
-for more information on how to use essHIC, please refer to the **tutorial** on the package **wiki**
+for more information on how to use essHIC, please refer to the [tutorial](https://github.com/stefanofranzini/essHIC/tree/master/essHIC/tutorial) on the package **wiki**
 
 
