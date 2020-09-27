@@ -18,6 +18,8 @@ obtain high quality pictures with minimal knowledge of the matplotlib library.
 - **essHIC.dist**: a useful explorative tool to analyze distance matrices. It allows to perform hierarchical and spectral clustering on the dataset, to compute the ROC curves according to the cell-types provided in the metadata, and to perform multiscaling dimensional reduction (MDS). It also contains plotting tools to visualize
 the results of all mentioned analyses.
 
+More information is available on the package **wiki**.
+
 ---
 
 ## INSTALLING
@@ -58,5 +60,7 @@ To use *essHIC* in one of your python3 scripts import the package with
 ```python3
 import essHIC
 ```
+
+for more information on how to use essHIC, please refer to the **tutorial** on the package **wiki**
 
 
