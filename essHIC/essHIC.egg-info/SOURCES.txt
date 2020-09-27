@@ -1,0 +1,13 @@
+setup.py
+essHIC/__init__.py
+essHIC/dist.py
+essHIC/ess.py
+essHIC/hic.py
+essHIC/make_hic.py
+essHIC/utils.py
+essHIC.egg-info/PKG-INFO
+essHIC.egg-info/SOURCES.txt
+essHIC.egg-info/dependency_links.txt
+essHIC.egg-info/requires.txt
+essHIC.egg-info/top_level.txt
+essHIC.egg-info/zip-safe
