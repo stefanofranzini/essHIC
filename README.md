@@ -1,30 +1,30 @@
 # essHIC
 ---
 
-### A python3 package to analyze Hi-C matrices, enhance their specific patterns through spectral filtering and compute metric distances between couples of experiments.
+### A python package to analyze Hi-C matrices, enhance their specific patterns through spectral filtering and compute metric distances between couples of experiments.
 
 ---
 
 #### essHIC contains many useful modules to guide users throughout the analysis:
 
-- **essHIC.makehic** : enables the user to process raw matrix data and their metadata to merge multiple sources into a single well ordered data repository, split chromosomes and obtain Observed over Expected matrices if needed.
+- [essHIC.makehic](https://github.com/stefanofranzini/essHIC/wiki/essHIC.make_hic): enables the user to process raw matrix data and their metadata to merge multiple sources into a single well ordered data repository, split chromosomes and obtain Observed over Expected matrices if needed.
 
-- **essHIC.hic** : wrapper class for Hi-C matrices containing metadata along with the matrix of contact probabilities for the chosen experiment. It contains useful tools
+- [essHIC.hic](https://github.com/stefanofranzini/essHIC/wiki/essHIC.hic): wrapper class for Hi-C matrices containing metadata along with the matrix of contact probabilities for the chosen experiment. It contains useful tools
 to normalize and clean the matrix, compute its spectral properties, and process it to obtain its essential component. It also provides plotting functions to
 obtain high quality pictures with minimal knowledge of the matplotlib library.
 
-- **essHIC.ess** : tool to compute a dataset-wide distance matrix between all couples of experiments using the essential metric distance.
+- [essHIC.ess](https://github.com/stefanofranzini/essHIC/wiki/essHIC.ess): tool to compute a dataset-wide distance matrix between all couples of experiments using the essential metric distance.
 
-- **essHIC.dist**: a useful explorative tool to analyze distance matrices. It allows to perform hierarchical and spectral clustering on the dataset, to compute the ROC curves according to the cell-types provided in the metadata, and to perform multiscaling dimensional reduction (MDS). It also contains plotting tools to visualize
+- [essHIC.dist](https://github.com/stefanofranzini/essHIC/wiki/essHIC.dist): a useful explorative tool to analyze distance matrices. It allows to perform hierarchical and spectral clustering on the dataset, to compute the ROC curves according to the cell-types provided in the metadata, and to perform multiscaling dimensional reduction (MDS). It also contains plotting tools to visualize
 the results of all mentioned analyses.
 
-More information is available on the package **wiki**.
+More information is available on the package [wiki](https://github.com/stefanofranzini/essHIC/wiki).
 
 ---
 
 ## INSTALLING
 
-essHIC is written in python3, it has been tested in python3.5.2. Both the python3 language and the required packages need to be installed. To install the package through the python3 package manager, copy and paste the snippet below in your terminal:
+essHIC is written in python, it has been tested in python2.7. Both the python3 language and the required packages need to be installed. To install the package through the python package manager, copy and paste the snippet below in your terminal:
 
 ```bash
 pip install --upgrade essHIC 
@@ -32,9 +32,9 @@ pip install --upgrade essHIC
 
 Please notice that you may need to have administrator priviliges in order to be able to install the package. Using this method will take care of the dependencies.
 
-Otherwise, you may simply clone this repository to your computer. To use the package in a python3 script you will need to link its local path; to do so write the snippet below in your python3 code:
+Otherwise, you may simply clone this repository to your computer. To use the package in a python script you will need to link its local path; to do so write the snippet below in your python code:
 
-```python3
+```python
 import sys
 
 sys.path.append('path/to/essHIC')
@@ -55,12 +55,12 @@ matplotlib
 
 ## USAGE
 
-To use *essHIC* in one of your python3 scripts import the package with
+To use *essHIC* in one of your python scripts import the package with
 
-```python3
+```python
 import essHIC
 ```
 
-for more information on how to use essHIC, please refer to the **tutorial** on the package **wiki**
+for more information on how to use essHIC, please refer to the [tutorial](https://github.com/stefanofranzini/essHIC/wiki/tutorial) on the package [wiki](https://github.com/stefanofranzini/essHIC/wiki)
 
 
