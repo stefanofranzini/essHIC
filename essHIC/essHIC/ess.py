@@ -3,8 +3,6 @@ import scipy as sp
 import matplotlib.pyplot as plt
 import os
 
-from hic import hic
-
 ###########################################################
 ###### ESS CLASS	 ##################################
 # 

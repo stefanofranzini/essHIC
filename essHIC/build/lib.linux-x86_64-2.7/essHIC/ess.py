@@ -3,8 +3,6 @@ import scipy as sp
 import matplotlib.pyplot as plt
 import os
 
-from hic import hic
-
 ###########################################################
 ###### ESS CLASS	 ##################################
 # 
@@ -204,7 +202,7 @@ class ess:
 		
 		opt.close()
 		
-	def get_essential_distance(self,output,nvec=-1,spectrum='flat'):
+	def get_essential_distance(self,output,nvec=-1,spectrum=1.):
 		"compute and save a essential distance matrix"
 		
 		opt = open(output,'w')
