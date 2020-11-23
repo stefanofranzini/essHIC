@@ -1,7 +1,7 @@
 # essHIC
 ---
 
-### A python package to analyze Hi-C matrices, enhance their specific patterns through spectral filtering and compute metric distances between couples of experiments.
+Here we introduce essHi-C, a method to isolate the specific, or essential component of Hi-C matrices from the aspecific portion of the spectrum that is compatible with random matrices. Systematic comparisons shows that essHi-C improves the clarity of the interaction patterns, enhances the robustness against sequencing depth, allows the unsupervised clustering of experiments in different cell lines and recovers the cell-cycle phasing of single-cells based on Hi-C data. Thus, essHi-C provides means for isolating significant biological and physical features from Hi-C matrices.
 
 ---
 
