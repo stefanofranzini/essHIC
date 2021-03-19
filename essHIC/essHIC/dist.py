@@ -605,7 +605,7 @@ class dist:
 	
 		colormap = cm.get_cmap(cmap)
 		col      = [ mplc.rgb2hex(colormap(i*1./(self.mcol.max()))) for i in range(self.mcol.max()+1) ]
-		lab      = self.lab2col.keys()
+		lab      = list(self.lab2col.keys())
 	
 		cnum     = self.clusters.max()+1
 		
