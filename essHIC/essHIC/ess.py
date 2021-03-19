@@ -2,6 +2,12 @@ import numpy as np
 import scipy as sp
 import matplotlib.pyplot as plt
 import os
+import sys
+
+sys.path.append(os.path.join(os.path.dirname(__file__), ".."))
+
+from essHIC.hic import hic
+from essHIC.hic import pseudo
 
 ###########################################################
 ###### ESS CLASS	 ##################################
