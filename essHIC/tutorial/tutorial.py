@@ -1,8 +1,10 @@
-#!/usr/bin/python2.7
+#!/usr/bin/env python
 
 import numpy as np
 import matplotlib.pyplot as plt
 import os
+import sys
+sys.path.insert(0, '..')
 
 import essHIC
 
@@ -24,8 +26,8 @@ mymaker.save_decay_norm('nrm',res='100kb',dirtree='05_sub-matrices/nrm',makenew=
 hicA = essHIC.hic('hic_data/hic001/dkn/dkn_chr17_100kb.npy')	# read experiment hic001
 hicB = essHIC.hic('hic_data/hic012/dkn/dkn_chr17_100kb.npy')	# read experiment hic012
 
-print 'hicA contains experiment %s, chromosome %d, its cell-type is %s' % ( hicA.oldrefname, hicA.chromo, hicA.cell ) # print some information on hicA
-print 'hicB contains experiment %s, chromosome %d, its cell-type is %s' % ( hicB.oldrefname, hicB.chromo, hicB.cell ) # print some information on hicB
+print ('hicA contains experiment %s, chromosome %d, its cell-type is %s' % ( hicA.oldrefname, hicA.chromo, hicA.cell )) # print some information on hicA
+print ('hicB contains experiment %s, chromosome %d, its cell-type is %s' % ( hicB.oldrefname, hicB.chromo, hicB.cell )) # print some information on hicB
 
 hicA.get_spectrum()	# computes eigenvectors and eigenvalues for hicA
 hicB.get_spectrum()	# computes eigenvectors and eigenvalues for hicB
@@ -79,7 +81,7 @@ plt.show()
 mydist.get_roc()	 	# compute ROC curve from this matrix
 AUC = mydist.get_roc_area()	# compute the area under the ROC curve
 
-print 'The area under the curve is %f' % AUC	# print the value of area under the curve
+print ('The area under the curve is %f' % AUC)	# print the value of area under the curve
 mydist.plot_roc()				# plot the ROC curve
 plt.show()
 
@@ -129,4 +131,4 @@ plt.show()
 
 ##################################################################
 
-print "Congratulations! You completed the tutorial!"
+print ("Congratulations! You completed the tutorial!")
